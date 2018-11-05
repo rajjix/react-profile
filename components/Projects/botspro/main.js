@@ -7,7 +7,7 @@ import './main.css';
 export default () => {
   return(
       <Grid container>
-        <Grid item md={6} xs={12}>
+        <Grid item md={12} xs={12}>
           <MyBot />
         </Grid>
       </Grid>

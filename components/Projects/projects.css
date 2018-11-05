@@ -1,11 +1,11 @@
 #tabbar {
-  border: 0px solid transparent;
   margin: auto;
   margin-top: 10vh;
-  width: 40%;
+  width: 100%;
   background: transparent;
   position: relative;
   z-index:2;
+  box-shadow: inset 0 0 0px black, 0 0 0px black;
 }
 
 

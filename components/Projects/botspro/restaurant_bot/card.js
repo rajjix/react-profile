@@ -9,7 +9,7 @@ export default () => {
       <CardActionArea>
         <CardMedia
           id="bot-card-media"
-          image="http://en.csjbot.com/upload/flashpic/20161109091804.jpg"
+          image="https://i2-prod.mirror.co.uk/incoming/article8044939.ece/ALTERNATES/s1200/Screen-Shot-2016-05-25-at-100754.jpg"
           title="Barashki Bot"
         />
         <CardContent style={{textAlign:"center"}}>

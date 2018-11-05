@@ -27,13 +27,13 @@ class Projects extends Component {
     const {value } = this.state;
     return(
       <div>
-        <AppBar id="tabbar" style={{width:"50%"}}>
+        <AppBar id="tabbar" style={{width:"100%"}}>
           <Tabs
             value = { value }
             onChange={ this.handleChange }
             indicatorColor="secondary"
-            style={{width:"100%", color:"#333"}}
-            scrollable
+            style={{color:"#333"}}
+            centered
           >
             <Tab label="React" />
             <Tab label="Django" />
