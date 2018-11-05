@@ -1,0 +1,53 @@
+#contact-card-left {
+  border: 1px solid green;
+  margin-right: 5px;
+  border-radius: 5%;
+  background: #ccc;
+  margin-top: 5vh;
+  font-family: 'Concert One', cursive;
+}
+
+#contact-card-right {
+  border: 1px solid green;
+  margin-left: 5px;
+  border-radius: 5%;
+  background: #ccc;
+  margin-top: 5vh;
+  font-family: 'Roboto';
+}
+
+#contact-avatar {
+  width: 40%;
+}
+
+span {
+  letter-spacing: 2px;
+}
+.info {
+  padding-bottom: 10vh;
+}
+
+#phone-number {
+  padding-top:10vh;
+  font-size: 20px;
+}
+
+#skype {
+  font-size: 20px;
+}
+
+#email {
+  font-size: 20px;
+}
+
+@media screen and ( max-width:470px ){
+  #phone-number {
+    font-size: 15px;
+  }
+  #email {
+    font-size: 15px;
+  }
+  #skype {
+    font-size: 15px;
+  }
+}

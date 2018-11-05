@@ -1,0 +1,86 @@
+.card {
+  margin: auto;
+  margin-top: -5vh;
+  margin-bottom: 9vh;
+  width:66%;
+  text-align: center;
+  height:100%;
+}
+
+#avatar {
+  height: 15em;
+}
+#content {
+  background:rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+#title{
+  padding-left:1em;
+  padding-bottom:0.3em;
+  font-family: 'Concert One', cursive;
+  color: #005500;
+}
+#skills {
+  padding-bottom: 2vh;
+}
+@media screen and ( max-width:800px ){
+  #avatar {
+    height: 12em;
+  }
+  #title{
+    text-align:center;
+    font-size: 42px;
+    padding-left:0em;
+  }
+
+  #skills{
+    font-size:20px;
+  }
+}
+
+@media screen and ( max-width:470px ){
+  #avatar {
+    height: 8em;
+  }
+  #title{
+    text-align:center;
+    font-size: 25px;
+    padding-left:0em;
+  }
+
+  #skills{
+    font-size:12px;
+  }
+}
+hr {
+  width: 60%;
+  border-top:4px dashed black;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.typewriter{
+  overflow: hidden;
+  border-right: .1em solid transparent; 
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation: 
+    typing 7s steps(500, end),
+    blink-caret .5s step-end 8;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: green; }
+}
+
+.skill-icon {
+  width:15%;
+}

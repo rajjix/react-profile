@@ -1,0 +1,31 @@
+#reactpro-card {
+  margin: 5px;
+  background-color: #aeaeae;
+  border-radius: 5%;
+  box-shadow: inset 0 0 30px black, 0 0 30px black;
+}
+
+#card-button-react{
+  text-align: center;
+  text-color: black;
+  background: green;
+  padding-left:33%;
+  padding-right:33%;
+  margin-bottom: 10px;
+  border: 2px solid red;
+  box-shadow: inset 0 0 50px gray, 0 0 20px red;
+}
+
+@media screen and (max-width:1000px) {
+  #card-button-react{
+    padding-left:20%;
+    padding-right:20%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #card-button-react{
+    font-size:0.8em;
+    padding: 0;
+  }
+}
