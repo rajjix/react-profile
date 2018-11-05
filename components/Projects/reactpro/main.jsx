@@ -14,18 +14,6 @@ export default () => {
         <Grid item md={6} xs={12}>
           <Project2 />
         </Grid>
-        <Grid item md={6} xs={12}>
-          <Project2 />
-        </Grid>
-        <Grid item md={6} xs={12}>
-          <Project1 />
-        </Grid>
-        <Grid item md={6} xs={12}>
-          <Project1 />
-        </Grid>
-        <Grid item md={6} xs={12}>
-          <Project2 />
-        </Grid>
       </Grid>
   );
 }

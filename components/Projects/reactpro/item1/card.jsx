@@ -6,28 +6,32 @@ export default () => {
     <Card id="reactpro-card">
       <CardActionArea>
         <CardMedia
-          className="project1-card-media"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image="https://preview.ibb.co/cq1Hnf/profile.png"
+          title="Profile"
+          style={{height:"200px"}}
+          href="www.google.com"
         />
         <CardContent style={{textAlign:"center"}}>
           <Typography gutterBottom variant="h5" component="h2">
-            Project 1
+            Profile Website
           </Typography>
-          <Typography component="p" id="description">
-            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          <Typography component="p" id="description" style={{textAlign:"justify"}}>
+             If you like what your seeing,
+            then today is your lucky day because 
+            I'm sharing the code of this website.<br/>
+            <strong>P.S.: </strong>Change screen size to check how the content adjusts.
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Grid container style={{textAlign: "center"}}>
           <Grid item xs={12} md={6}>
-            <Button id="card-button-react">
+            <Button href="https://github.com/rajjix/react-profile" target="_blank" id="card-button-react">
               Github
             </Button>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Button id="card-button-react">
+            <Button href="/" id="card-button-react">
               LiveDemo
             </Button>
           </Grid>

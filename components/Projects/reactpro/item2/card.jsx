@@ -7,14 +7,15 @@ export default () => {
       <CardActionArea>
         <CardMedia
           className="project2-card-media"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image="https://img.freepik.com/free-vector/abstract-colored-background-with-text-of-coming-soon_1017-5071.jpg?size=338&ext=jpg"
+          title="Coming Soon"
+          style={{height:"200px"}}
         />
         <CardContent style={{textAlign:"center"}}>
           <Typography gutterBottom variant="h5" component="h2">
             Project 2
           </Typography>
-          <Typography component="p" id="description">
+          <Typography component="p" id="description" style={{textAlign:"justify"}}>
             A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. 
           </Typography>
         </CardContent>
