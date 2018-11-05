@@ -9,7 +9,7 @@ export default () => {
     <Card id="content">
       <CardActionArea>
         <CardContent className="content">
-          <Typography variant="h2" className="typewriter" id="title">
+          <Typography variant="h1" className="typewriter" id="title">
             Web Developer...
           </Typography>
           <br /><br />
