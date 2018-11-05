@@ -1,8 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import {Grid} from '@material-ui/core';
-import Project1 from './item1/card';
-import Project2 from './item2/card';
-import Project3 from './item3/card';
+import Djangoo from './djangoo/card';
 
 import './main.css';
 
@@ -10,13 +8,13 @@ export default () => {
   return(
       <Grid container>
         <Grid item md={6} xs={12}>
-          <Project1 />
+          <Djangoo />
         </Grid>
         <Grid item md={6} xs={12}>
-          <Project2 />
+          <Djangoo />
         </Grid>
         <Grid item md={6} xs={12}>
-          <Project3 />
+          <Djangoo />
         </Grid>
       </Grid>
   );

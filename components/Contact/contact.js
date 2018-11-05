@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Grid, Button, CardActionArea, CardMedia, CardContent, Typography, CardActions } from '@material-ui/core';
+import { Card, Grid, CardActionArea, CardContent, Typography} from '@material-ui/core';
 import './contact.css';
 
 export default () => {
@@ -14,10 +14,12 @@ export default () => {
                 Asaad Najjar
               </Typography>
               <Typography component="p" id="description">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                Hi my name is Asaad, and i'm a 25 year old freelancer from Lebanon.<br />
+                I'm primarly a backend developer, but i do have some experience 
+                with frontend development with languages like html/css and javascript, also i use react as a framework.
+                On the backend i use python with django and flask, primarly django and DRF.
+                I also have good administration and linux skills, my favorite distros are Debian and fedora.
+                My english is fluent and my favorite text editor is vim.
               </Typography>
             </CardContent>
           </CardActionArea>

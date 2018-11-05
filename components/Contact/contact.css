@@ -6,7 +6,9 @@
   margin-top: 5vh;
   font-family: 'Concert One', cursive;
 }
-
+#description {
+  text-align: justify;
+}
 #contact-card-right {
   border: 1px solid green;
   margin-left: 5px;

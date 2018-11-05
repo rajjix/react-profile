@@ -6,16 +6,17 @@ export default () => {
     <Card id="djangopro-card">
       <CardActionArea>
         <CardMedia
-          className="project2-card-media"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          className="project1-card-media"
+          image="https://ichef.bbci.co.uk/images/ic/960x540/p01bqgy6.jpg"
+          title="Django"
+          style={{height:"300px"}}
         />
         <CardContent style={{textAlign:"center"}}>
           <Typography gutterBottom variant="h5" component="h2">
-            Project 3
+            Coming Soon
           </Typography>
           <Typography component="p" id="description">
-            Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
           </Typography>
         </CardContent>
       </CardActionArea>
