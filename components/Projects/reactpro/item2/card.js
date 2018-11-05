@@ -23,12 +23,12 @@ export default () => {
       <CardActions>
         <Grid container style={{textAlign: "center"}}>
           <Grid item xs={12} md={6}>
-            <Button id="card-button-react">
+            <Button id="card-button-react" disabled>
               Github
             </Button>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Button id="card-button-react">
+            <Button id="card-button-react" disabled>
               LiveDemo
             </Button>
           </Grid>
