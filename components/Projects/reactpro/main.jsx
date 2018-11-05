@@ -8,22 +8,22 @@ import './main.css';
 export default () => {
   return(
       <Grid container>
-        <Grid item xs={6}>
+        <Grid item md={6} xs={12}>
           <Project1 />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item md={6} xs={12}>
           <Project2 />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item md={6} xs={12}>
           <Project2 />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item md={6} xs={12}>
           <Project1 />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item md={6} xs={12}>
           <Project1 />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item md={6} xs={12}>
           <Project2 />
         </Grid>
       </Grid>

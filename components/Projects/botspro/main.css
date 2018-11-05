@@ -9,17 +9,15 @@
   text-align: center;
   text-color: black;
   background: green;
-  padding-left:33%;
-  padding-right:33%;
-  margin-bottom: 10%;
+  width:90%;
+  margin-bottom: 10px;
   border: 2px solid red;
   box-shadow: inset 0 0 50px gray, 0 0 20px red;
 }
 
 @media screen and (max-width:1000px) {
   #card-button-bots{
-    padding-left:20%;
-    padding-right:20%;
+    width:80%;
   }
 }
 
