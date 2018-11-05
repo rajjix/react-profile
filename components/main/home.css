@@ -9,6 +9,7 @@
 
 #avatar {
   height: 15em;
+  margin-top: 5vh;
 }
 #content {
   background:rgba(0, 0, 0, 0.15);
@@ -26,6 +27,7 @@
 @media screen and ( max-width:800px ){
   #avatar {
     height: 12em;
+    margin-top: 14vh;
   }
   #title{
     text-align:center;
