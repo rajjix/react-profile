@@ -22,6 +22,11 @@
   width: 40%;
 }
 
+#namee {
+  font-family: 'Roboto','cursive';
+  font-weight: 5px;
+}
+
 span {
   letter-spacing: 2px;
 }

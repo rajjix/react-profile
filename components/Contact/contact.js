@@ -10,7 +10,7 @@ export default () => {
           <CardActionArea>
             <CardContent style={{textAlign:"center"}}>
               <img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png" alt="Avatar" id="contact-avatar"/>
-              <Typography gutterBottom variant="h5" component="h2">
+              <Typography gutterBottom variant="h5" component="h2" id="namee">
                 Asaad Najjar
               </Typography>
               <Typography component="p" id="description">
