@@ -3,6 +3,8 @@ import { AppBar, Tabs, Tab, Typography } from '@material-ui/core';
 import ReactList from './reactpro/main';
 import DjangoList from './djangopro/main';
 import BotList from './botspro/main';
+import Menu from '../AppBar/menu';
+
 import './projects.css';
 
 
@@ -26,7 +28,8 @@ class Projects extends Component {
   render() {
     const {value } = this.state;
     return(
-      <div>
+      <div id="main-body">
+        <Menu />
         <AppBar id="tabbar" style={{width:"100%"}}>
           <Tabs
             value = { value }

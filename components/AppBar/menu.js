@@ -1,5 +1,8 @@
 import React from 'react';
 import { AppBar, Toolbar, Grid, Button } from '@material-ui/core';
+
+import { Link } from 'react-router-dom';
+
 import './menu.css';
 
 const styles = {
@@ -14,13 +17,13 @@ export default () => {
       <Toolbar variant="dense">
         <Grid container justify="flex-end">
           <Grid item md={10} xs={4} className="item">
-            <Button href="/">Home</Button>
+            <Link to="/" style={{ textDecoration: 'none' }}><Button>Home</Button></Link>
           </Grid>
           <Grid item md={1} xs={4} className="item" style={styles.menuitems}>
-            <Button href="/contact">Contact</Button>
+            <Link to="/contact" style={{ textDecoration: 'none' }}><Button>Contact</Button></Link>
           </Grid>
           <Grid item md={1} xs={4} className="item" style={styles.menuitems}>
-            <Button href="/projects">Projects</Button>
+            <Link to="/projects" style={{ textDecoration: 'none' }}><Button>Projects</Button></Link>
           </Grid>
         </Grid>
       </Toolbar>

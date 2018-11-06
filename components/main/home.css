@@ -1,7 +1,7 @@
 .card {
   margin: auto;
   margin-top: -5vh;
-  margin-bottom: 9vh;
+  padding-bottom: 10vh;
   width:66%;
   text-align: center;
   height:100%;
@@ -15,15 +15,18 @@
   background:rgba(0, 0, 0, 0.15);
   width: 100%;
 }
+
 #title{
   padding-left:1em;
   padding-bottom:0.3em;
   font-family: 'Spicy Rice', 'Roboto', cursive;
   color: #005500;
 }
+
 #skills {
   padding-bottom: 2vh;
 }
+
 @media screen and ( max-width:800px ){
   #avatar {
     height: 12em;
