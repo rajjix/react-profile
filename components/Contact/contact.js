@@ -6,6 +6,7 @@ import Menu from '../AppBar/menu';
 export default () => {
   return(
     <div id="main-body">
+      <Menu />
       <Grid container id="container-grid">
         <Grid item xs={12} sm={6}>
           <Card id="contact-card-left">
