@@ -7,7 +7,7 @@ export default () => {
   return(
     <div id="main-body">
       <Menu />
-      <Grid container id="container-grid">
+      <Grid container id="contact-grid">
         <Grid item xs={12} sm={6}>
           <Card id="contact-card-left">
             <CardActionArea>

@@ -1,14 +1,15 @@
 #contact-card-left {
   border: 1px solid green;
-  border-radius: 5%;
   background: #ccc;
-  margin-top: 5vh;
+  border-radius: 5%;
   font-family: 'Concert One', cursive;
+  height:100%;
 }
 
 #contact-grid {
   width: 90%;
-  margin: auto;
+  margin:auto;
+  margin-top: 5vh;
   height: 75vh;
   margin-bottom: 20vh;
 }
@@ -21,8 +22,8 @@
   border: 1px solid green;
   border-radius: 5%;
   background: #ccc;
-  margin-top: 5vh;
   font-family: 'Roboto';
+  height:100%;
 }
 
 #contact-avatar {
