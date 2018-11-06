@@ -6,6 +6,7 @@
   height:100%;
 }
 
+
 #contact-grid {
   width: 90%;
   margin:auto;
@@ -38,6 +39,7 @@
 span {
   letter-spacing: 2px;
 }
+
 .info {
   padding-bottom: 10vh;
 }
