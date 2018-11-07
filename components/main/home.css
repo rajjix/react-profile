@@ -61,15 +61,15 @@ span {
   font-size: 4.4rem;
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
+  color: #005500;
   overflow: hidden;
   margin: 0 auto;
-  border-right: .1em solid transparent; 
   text-shadow: 0 0 5px #000, 0 0 10px #000;
   letter-spacing: .1em;
   white-space: nowrap;
+  border-right: .1em solid transparent; 
   padding-left: 0.1em;
   padding-bottom:0.115em;
-  color: #005500;
   animation: 
     typing 5s steps(500, end),
     blink-caret .5s step-end 8;
