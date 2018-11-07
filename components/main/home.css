@@ -1,5 +1,6 @@
 span {
   padding:0.1em;
+  letter-spacing: 2px;
   font-weight: 400;
   animation-name: blink;
   animation-iteration-count: infinite;
