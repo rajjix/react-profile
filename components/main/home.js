@@ -8,18 +8,24 @@ export default () => {
   return(
     <div id="main-body">
       <Menu/>
-      <div className="card">
-      <img id="avatar" src="https://orig00.deviantart.net/6777/f/2011/053/4/8/my_personal_avatar_by_lucentyami-d3a5i7p.png" alt="avatar" />
-      <Card id="content">
+      <div className="welcome-card">
+      <img id="home-avatar" src="https://orig00.deviantart.net/6777/f/2011/053/4/8/my_personal_avatar_by_lucentyami-d3a5i7p.png" alt="avatar" />
+      <Card id="card-box-content">
         <CardActionArea>
           <CardContent className="content">
+            <br />
             <Typography variant="h1" className="typewriter" id="title">
-              Web Developer...
+              Web Developer
             </Typography>
             <br />
-            <hr/>
             <Typography variant="h4" id="skills">
-              Python | Django | Bootstrap | JavaScript | React | SQL | HTML/CSS
+              &nbsp;<span className="Python-span">Python</span>&nbsp;
+              &nbsp;<span className="Django-span">Django</span>&nbsp;
+              &nbsp;<span className="Bootstrap-span">Bootstrap</span>&nbsp;
+              &nbsp;<span className="JavaScript-span">JavaScript</span>&nbsp;
+              &nbsp;<span className="React-span">React</span>&nbsp;
+              &nbsp;<span className="SQL-span">SQL</span>&nbsp;
+              &nbsp;<span className="HTMLC-span">HTML/CSS</span>&nbsp;
             </Typography>
             <br />
             <Grid container>
