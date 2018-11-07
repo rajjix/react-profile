@@ -12,11 +12,11 @@ export default () => {
           <Card id="contact-card-left">
             <CardActionArea>
               <CardContent style={{textAlign:"center"}}>
-                <img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png" alt="Avatar" id="contact-avatar"/>
+                <img src="https://praveenmp.github.io/avatar2.jpg" alt="Avatar" id="contact-avatar"/>
                 <Typography gutterBottom variant="h5" component="h2" id="namee">
                   Asaad Najjar
                 </Typography>
-                <Typography component="p" id="description">
+                <Typography component="p" id="asaad-description">
                   Hi my name is Asaad, and i'm a 25 year old freelancer from Lebanon.<br />
                   I'm primarly a backend developer, but i do have some experience 
                   with frontend development with languages like html/css and javascript, also i use react as a framework.
@@ -32,15 +32,15 @@ export default () => {
           <Card id="contact-card-right">
             <CardActionArea>
               <CardContent >
-                <Typography gutterBottom variant="h3" component="h2" style={{textAlign:"center"}}>
+                <Typography gutterBottom variant="h3" id="contact-me-text">
                   Contact Me
                 </Typography>
                 <hr style={{width:"60%", borderTop:" 3px dashed black"}}/>
                 <Typography component="p" className="info" id="phone-number">
-                  Phone: <span><strong>+380730608247</strong></span>
+                  Phone: <span><strong>+380730608247</strong></span><br /><br />
                 </Typography>
                 <Typography component="p" className="info" id="email"> 
-                  Email: &nbsp;&nbsp;<span><strong>rajjix.dev.1992@hotmail.com</strong></span>
+                  Email:<span><strong>rajjix.dev.1992@hotmail.com</strong></span><br /><br />
                 </Typography>
                 <Typography component="p" className="info" id="skype">
                   Skype: &nbsp;<span><strong>asaad.najjar.1</strong></span>
