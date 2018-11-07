@@ -42,13 +42,10 @@ span {
   margin-top: -5vh;
   width:66%;
   text-align: center;
-<<<<<<< HEAD
   height: 100vh;
   margin-bottom: 20vh;
-=======
   height:100vh;
   padding-bottom: 20vh;
->>>>>>> test
 }
 
 #home-avatar {
@@ -61,14 +58,10 @@ span {
   width: 100%;
 }
 #title{
-<<<<<<< HEAD
-<<<<<<< HEAD
   font-size: 4.8rem;
-=======
   overflow: hidden;
   border-right: .1em solid transparent; 
   font-size: 4.4rem;
->>>>>>> 08189a6c730dda0f9a61612c1db1b4d89d27b41b
   font-weight: bold;
   margin: 0 auto;
   letter-spacing: .1em;
@@ -78,19 +71,14 @@ span {
     blink-caret .5s step-end 8;
   text-shadow: 0 0 5px #000, 0 0 10px #000;
   padding-bottom: 0.115em;
-<<<<<<< HEAD
   padding-left: 0.1em;
   font-family: 'Ubuntu', sans-serif;
-=======
   font-size: 4.8em;
   font-weight: bold;
   text-shadow: 0 0 5px #000, 00 10px #000;
   padding-bottom:0.115em;
   padding-left:0.1em;
   font-family: 'Ubuntu', sans-serif;;
->>>>>>> test
-=======
->>>>>>> 08189a6c730dda0f9a61612c1db1b4d89d27b41b
   color: #005500;
 }
 
