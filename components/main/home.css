@@ -1,12 +1,12 @@
 .card {
   margin: auto;
   margin-top: -5vh;
-  padding-bottom: 10vh;
   width:66%;
   text-align: center;
-  height:100%;
+  height:100vh;
+  padding-bottom: 20vh;
 }
-#aaa
+
 #avatar {
   height: 15em;
   margin-top: 5vh;
@@ -17,9 +17,12 @@
 }
 
 #title{
-  padding-left:1em;
-  padding-bottom:0.3em;
-  font-family: 'Spicy Rice', 'Roboto', cursive;
+  font-size: 4.8em;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000, 00 10px #000;
+  padding-bottom:0.115em;
+  padding-left:0.1em;
+  font-family: 'Ubuntu', sans-serif;;
   color: #005500;
 }
 
