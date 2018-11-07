@@ -16,9 +16,8 @@ export default () => {
             <Typography variant="h1" className="typewriter" id="title">
               Web Developer...
             </Typography>
-            <br /><br />
+            <br />
             <hr/>
-            <br /><br />
             <Typography variant="h4" id="skills">
               Python | Django | Bootstrap | JavaScript | React | SQL | HTML/CSS
             </Typography>

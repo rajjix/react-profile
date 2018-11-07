@@ -3,7 +3,6 @@
   background: #ccc;
   border-radius: 5%;
   font-family: 'Concert One', cursive;
-  height:100%;
 }
 
 
@@ -11,8 +10,7 @@
   width: 90%;
   margin:auto;
   margin-top: 5vh;
-  height: 75vh;
-  margin-bottom: 20vh;
+  height: 150vh;
 }
 
 #description {
@@ -24,7 +22,6 @@
   border-radius: 5%;
   background: #ccc;
   font-family: 'Roboto';
-  height:100%;
 }
 
 #contact-avatar {
