@@ -1,9 +1,7 @@
 import React from 'react';
 import {Grid} from '@material-ui/core';
 import Profile from './profile/card';
-import Project2 from './item2/card';
-
-import './main.css';
+import Dummy from './item/card';
 
 export default () => {
   return(
@@ -12,7 +10,7 @@ export default () => {
           <Profile />
         </Grid>
         <Grid item md={6} xs={12}>
-          <Project2 />
+          <Dummy />
         </Grid>
       </Grid>
   );

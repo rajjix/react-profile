@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Card, Grid, Button, CardActionArea, CardMedia, CardContent, Typography, CardActions } from '@material-ui/core';
+import './card.css';
 
 export default (props) => {
   return(
