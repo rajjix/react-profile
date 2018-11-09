@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Card, Grid, Button, CardActionArea, CardMedia, CardContent, Typography, CardActions } from '@material-ui/core';
 
 export default (props) => {
@@ -16,6 +16,7 @@ export default (props) => {
           </Typography>
           <Typography component="p" id="description" style={{textAlign:"justify"}}>
             { props.description }
+            { props.ps ? <Fragment><br /><br /><strong>P.S.: </strong>{props.ps}</Fragment> : "" }
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -27,7 +28,7 @@ export default (props) => {
             </Button>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Button href={ props.live } id="card-button-react" disabled={props.disabled}>
+            <Button href={ props.livedemo } target="_blank" id="card-button-react" disabled={props.disabled}>
               LiveDemo
             </Button>
           </Grid>
