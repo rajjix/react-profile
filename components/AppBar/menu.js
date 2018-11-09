@@ -34,8 +34,8 @@ export default () => {
       </AppBar>
     <main>
       <Route path="/" exact component={Home} />
-      <Route exact path="/contact" component={ Contact } />
-      <Route exact path="/projects" component={ Projects } />
+      <Route path="/contact" component={ Contact } />
+      <Route path="/projects" component={ Projects } />
     </main>
     </div>
   );
