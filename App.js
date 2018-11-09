@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import BaseRouter from './routes';
+import Menu from './components/AppBar/menu';
 
 import './App.css';
 
 class App extends Component {
     render() {
-        return <BaseRouter />
+        return <Menu />
   }
 }
 
