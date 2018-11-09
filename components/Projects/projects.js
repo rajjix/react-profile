@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { AppBar, Tabs, Tab, Typography } from '@material-ui/core';
 import ReactList from './reactpro/main';
 import DjangoList from './djangopro/main';
 import BotList from './botspro/main';
-import Menu from '../AppBar/menu';
 
 import './projects.css';
 
@@ -28,8 +27,7 @@ class Projects extends Component {
   render() {
     const {value } = this.state;
     return(
-      <div id="main-body">
-        <Menu />
+      <Fragment>
         <AppBar id="tabbar" style={{width:"100%"}}>
           <Tabs
             value = { value }
@@ -46,8 +44,8 @@ class Projects extends Component {
         {value === 0 && <TabContainer><ReactList /></TabContainer>}
         {value === 1 && <TabContainer><DjangoList /></TabContainer>}
         {value === 2 && <TabContainer><BotList /></TabContainer>}
-      </div>
-    );
+      </Fragment>
+      );
   }
 }
 

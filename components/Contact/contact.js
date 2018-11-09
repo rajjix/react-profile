@@ -1,12 +1,9 @@
 import React from 'react';
 import { Card, Grid, CardActionArea, CardContent, Typography} from '@material-ui/core';
 import './contact.css';
-import Menu from '../AppBar/menu';
 
 export default () => {
   return(
-    <div id="main-body">
-      <Menu />
       <Grid container id="contact-grid" spacing={16}>
         <Grid item xs={12} sm={6}>
           <Card id="contact-card-left">
@@ -50,6 +47,6 @@ export default () => {
           </Card>
         </Grid>
       </Grid>
-    </div>
+
   );
 }

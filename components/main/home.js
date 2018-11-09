@@ -1,13 +1,11 @@
 import React from 'react';
 import { Card, CardActionArea, Typography, CardContent, Grid } from '@material-ui/core';
-import Menu from '../AppBar/menu';
+
 
 import './home.css';
 
 export default () => {
   return(
-    <div id="main-body">
-      <Menu/>
       <div className="welcome-card">
       <img id="home-avatar" src="https://orig00.deviantart.net/6777/f/2011/053/4/8/my_personal_avatar_by_lucentyami-d3a5i7p.png" alt="avatar" />
       <Card id="card-box-content">
@@ -49,7 +47,6 @@ export default () => {
         </CardActionArea>
       </Card>
       </div>
-    </div>
   );
 }
 
