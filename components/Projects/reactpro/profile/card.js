@@ -10,8 +10,8 @@ export default () => {
       imageTitle="Profile"
       image="https://preview.ibb.co/cq1Hnf/profile.png"
       imageHeight="200px"
-      liveDemo="/"
-      Github="https://github.com/rajjix/react-profile"
+      livedemo="/"
+      github="https://github.com/rajjix/react-profile"
       ps="Change screen size to check how the content adjusts."
     >
       Profile Website  
