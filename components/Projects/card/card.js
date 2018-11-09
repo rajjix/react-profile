@@ -1,34 +1,35 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Card, Grid, Button, CardActionArea, CardMedia, CardContent, Typography, CardActions } from '@material-ui/core';
+import './card.css';
 
-export default () => {
+export default (props) => {
   return(
     <Card id="reactpro-card">
       <CardActionArea>
         <CardMedia
-          className="project2-card-media"
-          image="https://img.freepik.com/free-vector/abstract-colored-background-with-text-of-coming-soon_1017-5071.jpg?size=338&ext=jpg"
-          title="Coming Soon"
-          style={{height:"200px"}}
+          image={ props.image }
+          title={ props.imageTitle }
+          style= {{ height: props.imageHeight }}
         />
         <CardContent style={{textAlign:"center"}}>
           <Typography gutterBottom variant="h5" component="h2">
-            Project 2
+            { props.children }
           </Typography>
           <Typography component="p" id="description" style={{textAlign:"justify"}}>
-            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. 
+            { props.description }
+            { props.ps ? <Fragment><br /><br /><strong>P.S.: </strong>{props.ps}</Fragment> : "" }
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Grid container style={{textAlign: "center"}}>
           <Grid item xs={12} md={6}>
-            <Button id="card-button-react" disabled>
+            <Button href={ props.github } target="_blank" id="card-button-react" disabled={props.disabled}>
               Github
             </Button>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Button id="card-button-react" disabled>
+            <Button href={ props.livedemo } target="_blank" id="card-button-react" disabled={props.disabled}>
               LiveDemo
             </Button>
           </Grid>
