@@ -4,12 +4,37 @@ import ReactList from './reactpro/main';
 import DjangoList from './djangopro/main';
 import BotList from './botspro/main';
 
-import './projects.css';
 
+
+const styles = {
+  tabbar: {
+    margin: 'auto',
+    marginTop: '10vh',
+    width: '100%',
+    background: 'transparent',
+    position: 'relative',
+    zIndex: '2',
+    boxShadow: 'inset 0 0 0px black, 0 0 0px black'
+  },
+  projectContainer: {
+    position: 'relative',
+    margin: 'auto',
+    marginTop: '5vh',
+    marginBottom: '10vh',
+    maxWidth: '80%',
+    minHeight: '400px',
+    background: '#555',
+    border: '1px solid #ccc',
+    boxShadow: 'inset 0 0 30px black, 0 0 30px black',
+    zIndex:'1'
+  }
+  
+  
+}
 
 function TabContainer(props) {
   return (
-    <Typography component="div" id="project-container">
+    <Typography component="div" style={styles.projectContainer}>
       {props.children}
     </Typography>
   );
@@ -28,7 +53,7 @@ class Projects extends Component {
     const {value } = this.state;
     return(
       <Fragment>
-        <AppBar id="tabbar" style={{width:"100%"}}>
+        <AppBar style={styles.tabbar}>
           <Tabs
             value = { value }
             onChange={ this.handleChange }

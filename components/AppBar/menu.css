@@ -1,12 +1,4 @@
-#bar {
-  margin-right: 2vw;
-  margin-left: 2vw;
-  width: 94vw;
-  background: transparent;
-  z-index:2;
-}
-
-@media screen and ( max-width:600px ){
+@media screen and ( max-width:900px ){
   .item{
     text-align:center;
   }
@@ -14,6 +6,6 @@
 
 @media screen and (max-width:500px) {
   #bar {
-    position: static;
+    position: absolute;
   }
 }
