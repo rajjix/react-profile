@@ -12,7 +12,7 @@ const styles = {
     paddingTop: '10vh',
     paddingBottom: '30px'
   },
-  tabbar: {
+  appbar: {
     margin: 'auto',
     marginTop: '10vh',
     width: '100%',
@@ -59,7 +59,7 @@ class Projects extends Component {
     return(
       <div style={styles.mainBody}>
         <Menu />
-        <AppBar style={styles.tabbar}>
+        <AppBar style={styles.appbar}>
           <Tabs
             value = { value }
             onChange={ this.handleChange }
