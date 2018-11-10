@@ -9,12 +9,12 @@ import Menu from '../AppBar/menu';
 const styles = {
   mainBody: {
     background: 'linear-gradient(to right, #d7d3cc, #304352)',
-    paddingTop: '10vh',
+    paddingTop: '2vh',
     paddingBottom: '30px'
   },
-  appbar: {
+  appBar: {
     margin: 'auto',
-    marginTop: '10vh',
+    marginTop: '15vh',
     width: '100%',
     background: 'transparent',
     position: 'relative',
@@ -59,7 +59,7 @@ class Projects extends Component {
     return(
       <div style={styles.mainBody}>
         <Menu />
-        <AppBar style={styles.appbar}>
+        <AppBar style={styles.appBar}>
           <Tabs
             value = { value }
             onChange={ this.handleChange }

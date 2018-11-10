@@ -5,11 +5,6 @@ import { Link } from 'react-router-dom';
 import './menu.css';
 
 const styles = {
-  mainBody: {
-    background: 'linear-gradient(to right, #d7d3cc, #304352)',
-    paddingTop: '2vh',
-    paddingBottom: '5px'
-  },
   menuitems: {
     textAlign: "center",
   },
