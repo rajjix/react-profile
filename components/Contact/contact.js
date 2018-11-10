@@ -1,7 +1,14 @@
 import React from 'react';
 import { Card, Grid, CardActionArea, CardContent, Typography} from '@material-ui/core';
+import Menu from '../AppBar/menu';
+
 
 const styles = {
+  mainBody: {
+    background: 'linear-gradient(to right, #d7d3cc, #304352)',
+    paddingTop: '2vh',
+    paddingBottom: '30px'
+  },
   contactGrid: {
     width: '90%',
     margin: 'auto',
@@ -46,52 +53,55 @@ const styles = {
 
 export default () => {
   return(
-      <Grid container style={styles.contactGrid} spacing={16}>
-        <Grid item xs={12} sm={6}>
-          <Card style={styles.contactCard}>
-            <CardActionArea>
-              <CardContent>
-                <img src="https://praveenmp.github.io/avatar2.jpg" alt="Avatar" style={styles.contactAvatar}/>
-                <Typography gutterBottom variant="h5" component="h2" style={styles.name}>
-                  Asaad Najjar
-                </Typography>
-                <Typography component="p" style={styles.asaadDescription}>
-                  Hi my name is Asaad, and i'm a 25 year old freelancer from Lebanon.<br />
-                  I'm primarly a backend developer, but i do have some experience 
-                  with frontend development with languages like html/css and javascript, also i use react as a framework.
-                  On the backend i use python with django and flask, primarly django and DRF.
-                  I also have good administration and linux skills, my favorite distros are Debian and fedora.
-                  My english is fluent and my favorite text editor is vim.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
+    <div style={styles.mainBody}>
+      <Menu />
+        <Grid container style={styles.contactGrid} spacing={16}>
+          <Grid item xs={12} sm={6}>
+            <Card style={styles.contactCard}>
+              <CardActionArea>
+                <CardContent>
+                  <img src="https://praveenmp.github.io/avatar2.jpg" alt="Avatar" style={styles.contactAvatar}/>
+                  <Typography gutterBottom variant="h5" component="h2" style={styles.name}>
+                    Asaad Najjar
+                  </Typography>
+                  <Typography component="p" style={styles.asaadDescription}>
+                    Hi my name is Asaad, and i'm a 25 year old freelancer from Lebanon.<br />
+                    I'm primarly a backend developer, but i do have some experience 
+                    with frontend development with languages like html/css and javascript, also i use react as a framework.
+                    On the backend i use python with django and flask, primarly django and DRF.
+                    I also have good administration and linux skills, my favorite distros are Debian and fedora.
+                    My english is fluent and my favorite text editor is vim.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Card style={styles.contactCard}>
+              <CardActionArea>
+                <CardContent >
+                  <Typography gutterBottom variant="h3">
+                    Contact Me
+                  </Typography>
+                  <hr style={{width:"60%", borderTop:" 3px dashed black"}}/>
+                  <Typography component="p" className="info" style={styles.phoneNumber}>
+                    Phone: <br /><span><strong>+380730608247</strong></span><br />
+                  </Typography>
+                  <hr style={{width:"70%", margin:"2em auto"}}/>
+                  <Typography component="p" className="info" style={styles.email}> 
+                    Email:<br /><span><strong>rajjix.dev.1992@hotmail.com</strong></span><br />
+                  </Typography>
+                  <hr style={{width:"70%", margin:"2em auto"}}/>
+                  <Typography component="p" className="info" style={styles.skype}>
+                    Skype: <br /><span><strong>asaad.najjar.1</strong></span>
+                  </Typography>
+                  <br /><br />
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Card style={styles.contactCard}>
-            <CardActionArea>
-              <CardContent >
-                <Typography gutterBottom variant="h3">
-                  Contact Me
-                </Typography>
-                <hr style={{width:"60%", borderTop:" 3px dashed black"}}/>
-                <Typography component="p" className="info" style={styles.phoneNumber}>
-                  Phone: <br /><span><strong>+380730608247</strong></span><br />
-                </Typography>
-                <hr style={{width:"70%", margin:"2em auto"}}/>
-                <Typography component="p" className="info" style={styles.email}> 
-                  Email:<br /><span><strong>rajjix.dev.1992@hotmail.com</strong></span><br />
-                </Typography>
-                <hr style={{width:"70%", margin:"2em auto"}}/>
-                <Typography component="p" className="info" style={styles.skype}>
-                  Skype: <br /><span><strong>asaad.najjar.1</strong></span>
-                </Typography>
-                <br /><br />
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
-      </Grid>
+    </div>
 
   );
 }
