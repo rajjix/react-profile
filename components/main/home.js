@@ -49,7 +49,7 @@ export default () => {
                 </Grid>
                 <Grid item xs={4}>
                   <a href="https://t.me/rajjix" rel="noopener noreferrer" target="_blank">
-                    <img className="skill-icon" src="http://pluspng.com/img-png/telegram-logo-png-open-2000.png" alt="Telegram" title="Telegram" />
+                    <img className="skill-icon" src="https://image.flaticon.com/icons/png/512/87/87413.png" alt="Telegram" title="Telegram" />
                   </a>
                 </Grid>
               </Grid>
