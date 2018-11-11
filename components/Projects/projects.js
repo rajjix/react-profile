@@ -1,15 +1,20 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { AppBar, Tabs, Tab, Typography } from '@material-ui/core';
 import ReactList from './reactpro/main';
 import DjangoList from './djangopro/main';
 import BotList from './botspro/main';
-
+import Menu from '../AppBar/menu';
 
 
 const styles = {
-  tabbar: {
+  mainBody: {
+    background: 'linear-gradient(to right, #d7d3cc, #304352)',
+    paddingTop: '2vh',
+    paddingBottom: '30px'
+  },
+  appBar: {
     margin: 'auto',
-    marginTop: '10vh',
+    marginTop: '15vh',
     width: '100%',
     background: 'transparent',
     position: 'relative',
@@ -20,7 +25,7 @@ const styles = {
     position: 'relative',
     margin: 'auto',
     marginTop: '5vh',
-    marginBottom: '10vh',
+    marginBottom: '100px',
     maxWidth: '80%',
     minHeight: '400px',
     background: '#555',
@@ -52,8 +57,9 @@ class Projects extends Component {
   render() {
     const {value } = this.state;
     return(
-      <Fragment>
-        <AppBar style={styles.tabbar}>
+      <div style={styles.mainBody}>
+        <Menu />
+        <AppBar style={styles.appBar}>
           <Tabs
             value = { value }
             onChange={ this.handleChange }
@@ -69,7 +75,7 @@ class Projects extends Component {
         {value === 0 && <TabContainer><ReactList /></TabContainer>}
         {value === 1 && <TabContainer><DjangoList /></TabContainer>}
         {value === 2 && <TabContainer><BotList /></TabContainer>}
-      </Fragment>
+      </div>
       );
   }
 }
