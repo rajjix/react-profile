@@ -3,7 +3,7 @@ import React from 'react';
 
 
 export default () => {
-    return (
-        <h1>This is a demo page</h1>
-    );
+  return (
+    <h1 style={{textAlign:'center'}}> Just a demo page</h1>
+  );
 }
