@@ -8,6 +8,10 @@ import NotFound from './components/main/notfound';
 
 import './App.css';
 
+const DRFPANEL = process.env.REACT_APP_DRFPANEL;
+const SECRET = process.env.REACT_APP_SECRET;
+
+
 class App extends Component {
     render() {
         return (
@@ -17,6 +21,7 @@ class App extends Component {
                     <Route path="/contact" component={Contact} />
                     <Route path="/projects" component={Projects} />
                     <Route path="/test" component={Demo} />
+                    <Route path={SECRET} component={() => window.location = DRFPANEL}/>
                     <Route component={ NotFound } />
                 </Switch>
             </BrowserRouter>
