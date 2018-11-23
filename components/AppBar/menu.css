@@ -3,9 +3,3 @@
     text-align:center;
   }
 }
-
-@media screen and (max-width:500px) {
-  #bar {
-    position: absolute;
-  }
-}

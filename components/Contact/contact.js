@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Grid, CardActionArea, CardContent, Typography} from '@material-ui/core';
 import Menu from '../AppBar/menu';
 
-
 const styles = {
   mainBody: {
     background: 'linear-gradient(to right, #d7d3cc, #304352)',
@@ -12,7 +11,7 @@ const styles = {
   contactGrid: {
     width: '90%',
     margin: 'auto',
-    marginTop: '5vh',
+    marginTop: '15vh',
     marginBottom: '100px',
     textAlign: 'center'
   },
@@ -51,10 +50,9 @@ const styles = {
   }
 }
 
-export default () => {
-  return(
+const Contact  = ({onRouteChange}) =>
     <div style={styles.mainBody}>
-      <Menu />
+			<Menu onRouteChange = {onRouteChange} />
         <Grid container style={styles.contactGrid} spacing={16}>
           <Grid item xs={12} sm={6}>
             <Card style={styles.contactCard}>
@@ -103,5 +101,4 @@ export default () => {
         </Grid>
     </div>
 
-  );
-}
+export default Contact

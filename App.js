@@ -1,32 +1,40 @@
 import React, { Component } from 'react';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Home from './components/main/home';
-import Contact from './components/Contact/contact';
-import Projects from './components/Projects/projects';
-import Demo from './components/Projects/reactpro/item/test';
-import NotFound from './components/main/notfound';
-
+import AsyncComponent from './components/asyncComponent';
+import Menu from './components/AppBar/menu';
 import './App.css';
 
-const DRFPANEL = process.env.REACT_APP_DRFPANEL;
-const SECRET = process.env.REACT_APP_SECRET;
-
-
 class App extends Component {
-    render() {
-        return (
-            <BrowserRouter>
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/projects" component={Projects} />
-                    <Route path="/test" component={Demo} />
-                    <Route path={SECRET} component={() => window.location = DRFPANEL}/>
-                    <Route component={ NotFound } />
-                </Switch>
-            </BrowserRouter>
-        );
+	constructor() {
+		super();
+		this.state = {
+			route: 'home',
+		}
+	}
+	onRouteChange = (route) => {
+		this.setState({route: route});
+	}
+  render() {
+		if (this.state.route === 'home') {
+			return (
+				<div>
+					<Menu onRouteChange = {this.onRouteChange} />
+					<Home onRoutechange = {this.onRouteChange} />
+				</div>
+			);
+		} else if (this.state.route === 'contact') {
+			const AsyncContact = AsyncComponent(() => import('./components/Contact/contact'));
+			return <AsyncContact onRouteChange={this.onRouteChange} />
+		} else if (this.state.route === 'projects') {
+			const AsyncProjects = AsyncComponent(() => import('./components/Projects/projects'));
+			return (
+				<div>
+					<Menu onRouteChange = {this.onRouteChange} />
+					<AsyncProjects/>
+				</div>
+			);
     }
+	}
 }
 
 export default App;
