@@ -1,5 +1,5 @@
 span {
-  padding:0.1em;
+  padding:0.2em;
   letter-spacing: 2px;
   font-weight: 400;
   animation-name: blink;
@@ -50,7 +50,7 @@ span {
 
 #home-avatar {
   height: 15em;
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 
 #card-box-content {
